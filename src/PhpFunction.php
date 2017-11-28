@@ -11,6 +11,11 @@ namespace Wcs;
 
 class PhpFunction
 {
+    /**
+     * @param string $str
+     * @param int $step
+     * @return array
+     */
     public function RewritingStrSplit(string $str, int $step): array
     {
         $tab = [];
