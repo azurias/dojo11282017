@@ -11,6 +11,22 @@ namespace Wcs;
 
 class PhpFunction
 {
+    public function RewritingStrSplit(string $str, int $step): array
+    {
+        $tab = [];
+        for ($i = 0; $i < strlen($str); $i+=$step) {
+            $offset = '';
+            for ($j = $i; $j < $i+$step; $j++) {
+                $offset .= $str[$j];
+            }
+            $tab[] = $offset;
+
+        }
+
+        return $tab;
+
+    }
 
 
 }
+
